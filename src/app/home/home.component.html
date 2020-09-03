@@ -1,0 +1,20 @@
+<p>Edad 1:</p>
+<input type="text" [(ngModel)]="EdadUno">
+
+<br>
+
+<p>Edad 2:</p>
+<input type="text" [(ngModel)]="EdadDos">
+
+<br>
+<br>
+
+<button (click)="CalcularPromedio()">Calcular</button>
+<button (click)="BorrarCuadros()">Limpiar</button>
+
+<br>
+<br>
+<p> La suma es: {{ResultadoSuma}} </p>
+
+<br>
+<p> El promedio es: {{ResultadoPromedio}} </p>

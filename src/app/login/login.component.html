@@ -1,1 +1,18 @@
-<p>login works!</p>
+<H1>LOGIN</H1>
+
+<p>NOMBRE</p>
+<input type="text" [(ngModel)]="user.nombre">
+
+<br>
+
+<p>CLAVE</p>
+<input type="text" [(ngModel)]="user.clave">
+
+<br>
+<br>
+
+<button (click)="login(user)">Logearse</button>
+
+<br>
+<br>
+<p> Logeado??: {{mostrarLogin}} </p>
