@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   
   
   public mostrarLogin:string;
-  
+
   public user: Usuario = new Usuario();
 
   constructor(public router: Router) { }
@@ -22,13 +22,13 @@ export class LoginComponent implements OnInit {
 
   login(user:Usuario)
   {
-    if(user.nombre == 'axel121' && user.clave == 'bart12')
+    if(user.nombre == 'admin' && user.clave == 'admin')
     {
       this.router.navigate(['/home']);
     }
     else
     {
-      console.log("Error");
+      this.router.navigate(['/error']);
     }
   }
 
